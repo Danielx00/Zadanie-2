@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add new book</title>
+    <link rel="stylesheet" href="../css/addBookFormStyle.css">
+</head>
+<body>
+
+    <nav>
+        <a href="../index.html">Home</a>
+        <a href="#">Add book</a>
+        <a href="../html/books.html">My Books</a>
+        <a href="../html/contact.html">Contact</a>
+      </nav>
+      <header>
+          
+      </header>
+      <div class="books">
+        <table class="styled-table">
+            <thead>
+                <tr>
+                    <th>Title</th>
+                    <th>Author</th>   
+                    <th>Priority</th> 
+                    <th>Category</th>  
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                </tr>
+            </tbody>
+        </table>
+        </div>
+    <div class="container">
+        <form action=""  id="addBookForm" class="form">
+            <div class="form-control">
+                <label for="title">Title</label>
+                <input type="text" id="title" placeholder="Title..">
+                <small>Error message</small>
+            </div>
+            <div class="form-control">
+                <label for="author">Author</label>
+                <input type="text" id="author"  placeholder="Author..">
+                <small>Error message</small>
+            </div>
+            <div class="form-control">
+                <label for="priority">Priority</label>
+                <select  id="priority" form="addBookForm">
+                    <option value="" selected disabled hidden>Choose here</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                </select>
+                <small>Error message</small>
+            </div>
+            <div class="form-control">
+                <label for="category">Category</label>
+                <select  id="category" form="addBookForm">
+                    <option value="" selected disabled hidden>Choose here</option>
+                    <option value="Fantasy">Fantasy</option>
+                    <option value="Thriller">Thriller</option>
+                    <option value="Romances">Romances</option>
+                </select>
+                <small>Error message</small>
+            </div>
+          <button type="submit" class="submit" id="submit">Add</button>
+        </form>  
+    </div>  
+    <footer>
+        <p>&copy; Zadanie 2 "Biblioteka" - Zadanie rekrutacyjne 2021
+    </p>
+    </footer> 
+    <script src="../scripts/script.js"></script>
+</body>
+</html>
